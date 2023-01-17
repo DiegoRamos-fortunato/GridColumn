@@ -1,0 +1,135 @@
+body{
+    background-color: hsl(204, 43%, 93%);
+    display: flex;
+    justify-content: center;
+}
+.container__card{
+    display: flex;
+    flex-direction: column;
+    padding: 60px;
+    width: 80%;
+    
+    
+
+}
+
+.card__one{
+    background-color:#FFFFFF ;
+    padding: 30px;
+    font-family: 'Karla', sans-serif;
+}
+
+.card__titulo{
+    font-size: 23px;
+    color: #21d3c7;
+    font-weight: 700;
+
+}
+
+.card__subtitulo{
+    color: #BDDB33;
+    font-size: 18px;
+    margin-top: 15px;
+    font-weight: 400;
+}
+
+.card__texto{
+    margin-top: 17px;
+    line-height: 25px;
+    color: #BBBEC1;
+    
+}
+
+.card__two{
+    background-color: #2BB3B1;
+    padding: 30px;
+    font-family: 'Karla', sans-serif;
+    color: #FFFFFF;
+    
+}
+
+.segundo__card__titulo{
+    font-size: 21px;
+    font-weight: 700;
+    
+}
+
+.preco{
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.segundo__card--preco{
+   font-size: 30px;
+}
+
+.span__card{
+    margin-left: 20px;
+    color: #c2cfdb;
+}
+
+.segundo__card__texto{
+    margin-top: 10px;
+    
+}
+
+.segundo__card__button{
+    background-color: #BEDF33;
+    padding: 15px;
+    border-radius: 8px;
+    display: flex;
+    text-align: center;
+    margin-top: 30px;
+    justify-content: center;
+    text-decoration: none;
+    color: #FFFFFF;
+    font-weight: 400;
+    font-family: 'Karla', sans-serif;
+    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.073);
+}
+
+.card__three{
+    background-color: #34cfcd;
+    padding: 30px;
+    font-family: 'Karla', sans-serif;
+}
+
+.terceiro__card__titulo{
+    font-size: 20px;
+    color:#FFFFFF ;
+    font-weight: 700;
+}
+
+.terceiro__card__texto{
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 25px;
+    color:#c2e7e7;
+    margin-top: 10px;
+}
+
+@media (min-width : 720px) {
+    .container__card{
+        display: grid;
+        grid-template-areas: 
+            "cardOne cardOne"
+            "cardTwo cardThree"
+        ;  
+        grid-template-columns: repeat(2,1fr);
+        max-width: 600px;
+    }
+
+    .card__one {
+        grid-area: cardOne;
+        
+    }
+    
+}
+
+@media (min-width : 1024px) {
+    .container__card{
+        max-width: 800px;
+        margin-top: 200px;
+    }
+}
